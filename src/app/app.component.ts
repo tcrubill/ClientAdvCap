@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RestserviceService } from './restservice.service';
 import { World, Product, Pallier } from './world';
-import {HttpClientModule, HttpClient} from '@angular/common/http';
+
 
 
 

@@ -14,7 +14,7 @@ export class RestserviceService {
   constructor(private http: Http) {
     
     
-    this.server = "http://localhost:8080/adventureISIS/";
+    this.server = "http://localhost:9998/adventureISIS/";
     this.user = "";
 
   }

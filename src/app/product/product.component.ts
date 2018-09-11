@@ -1,5 +1,6 @@
 import { Component, OnInit,Input,ViewChild } from '@angular/core';
 import { World, Product, Pallier } from '../world';
+import { RestserviceService } from '../restservice.service';
 
 declare var require; const ProgressBar = require("progressbar.js");
 
@@ -10,7 +11,7 @@ declare var require; const ProgressBar = require("progressbar.js");
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  
+  server: string;
   progressbar: any;
 
   product: Product;
@@ -23,8 +24,8 @@ export class ProductComponent implements OnInit {
   
 
 
-  constructor() {
-   
+  constructor(private service: RestserviceService) {
+    this.server = service.getServer();
   }
 
   ngOnInit() {
