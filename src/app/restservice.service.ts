@@ -14,7 +14,7 @@ export class RestserviceService {
   constructor(private http: Http) {
     
     
-    this.server = "http://localhost:9998/adventureISIS/";
+    this.server = "http://localhost:9998/adventureisis/";
     this.user = "";
 
   }
@@ -25,7 +25,8 @@ export class RestserviceService {
   }
   
   getWorld(): Promise<World> {
-    return this.http.get(this.server + "webresources/generic/world").toPromise().then(response =>response.json()).catch(this.handleError);
+    console.log(this.server + "generic/world")
+    return this.http.get(this.server + "generic/world").toPromise().then(response =>response.json()).catch(this.handleError);
   };
 
   getServer():string{

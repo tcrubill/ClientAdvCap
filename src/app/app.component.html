@@ -8,27 +8,30 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4"><img [attr.src]="server+'../icones/world.jpg'" width='80px'/></div>
-        <div class="col-md-4">Argent $</div>
+        <div class="col-md-4">{{world.money}}</div>
         <div class="col-md-4">BUY</div>
       </div> 
-      <div class="row">
-          <div class="col-md-2"><button>Unlock</button></div>
-          <div class="col-md-10"><app-product [prod]="world.products.product[0]" class="product col-md-6"></app-product></div>
-      </div>
-      <div class="row">
-          <div class="col-md-2"><button>Cash upgrades</button></div>
-      </div>
+
 
       <div class="row">
-          <div class="col-md-2"><button>Angel upgrades</button></div>
-      </div>
+        <!--Menu de bouttons-->
+          <div class="col-md-4">
+            <br><br><br><button>Unlock</button><br><br><br>
+            <button>Cash upgrades</button><br><br><br>
+            <button>Cash upgrades</button><br><br><br>
+            <button>Angel upgrades</button><br><br><br>
+            <button>Managers</button><br><br><br>
+            <button>Investor</button>
+          </div>
+          <!--Image des produits-->
+          <div class="col-md-8">
+              <!-- <app-product [prod]="world.products.product[0]" class="product col-md-6"></app-product>
+            <app-product [prod]="world.products.product[0]" class="product col-md-6"></app-product>
+            <app-product [prod]="world.products.product[0]" class="product col-md-6"></app-product>
+            <app-product [prod]="world.products.product[0]" class="product col-md-6"></app-product> -->
+            
+          </div>
 
-      <div class="row">
-          <div class="col-md-2"><button>Managers</button></div>
-      </div>
-
-      <div class="row">
-          <div class="col-md-2"><button>Investor</button></div>
       </div>
 
     </div>
